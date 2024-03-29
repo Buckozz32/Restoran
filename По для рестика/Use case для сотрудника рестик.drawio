@@ -1,0 +1,184 @@
+
+@startuml
+
+<mxfile host="app.diagrams.net" modified="2024-03-19T15:15:23.982Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="IIJaMjXtascBawk3srZ1" version="24.0.7" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1487" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="Out75In-WXLZ_ITTz9ds-0" value="Кассир" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="60" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-4" value="Открытие кассовой смены" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="100" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-6" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="140" y="20" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="Out75In-WXLZ_ITTz9ds-6" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Out75In-WXLZ_ITTz9ds-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-8" value="Взаимодейстиве" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Out75In-WXLZ_ITTz9ds-4">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="110" y="80" as="sourcePoint" />
+            <mxPoint x="180" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="146" y="80" />
+              <mxPoint x="146" y="80" />
+              <mxPoint x="200" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-9" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="Out75In-WXLZ_ITTz9ds-8">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-11" value="Внесение заказа" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-12" value="Позиции нет на складе" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="Out75In-WXLZ_ITTz9ds-11" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="420" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-13" value="Заказ есть на складе" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="Out75In-WXLZ_ITTz9ds-11" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="280" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-14" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Out75In-WXLZ_ITTz9ds-15">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="230" y="210" as="sourcePoint" />
+            <mxPoint x="390" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-15" value="Покупатель оформил заказ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="100" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-16" value="Система списывает эту позицию со склада" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="380" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-22" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0.568;entryY=0.077;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.633;exitY=1.061;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Out75In-WXLZ_ITTz9ds-16" target="Out75In-WXLZ_ITTz9ds-23">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="300" y="480" as="sourcePoint" />
+            <mxPoint x="286.97" y="498.31999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-23" value="Принятие оплаты" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="500" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-24" value="оплата не прошла" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="Out75In-WXLZ_ITTz9ds-23" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="420" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-25" value="Оплата прошла" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="Out75In-WXLZ_ITTz9ds-23" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="280" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-26" value="Заказ не списывается со склада. Система не вносит оплату в кассу" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-27" value="Система вносит оплаты и печатет чек" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="600" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-28" value="Формирование отчета по выручке. Внесение отчета по выручке в Бд" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="730" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-29" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="200" y="860" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-30" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;entryX=0.767;entryY=-0.064;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.136;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Out75In-WXLZ_ITTz9ds-27" target="Out75In-WXLZ_ITTz9ds-28">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="240" y="680" as="sourcePoint" />
+            <mxPoint x="400" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-31" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="Out75In-WXLZ_ITTz9ds-30">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-32" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;entryX=0.687;entryY=0.29;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.153;exitY=1.021;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Out75In-WXLZ_ITTz9ds-28" target="Out75In-WXLZ_ITTz9ds-29">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="240" y="810" as="sourcePoint" />
+            <mxPoint x="297" y="867" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-33" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;" connectable="0" vertex="1" parent="Out75In-WXLZ_ITTz9ds-32">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-34" value="Система вносит оплаты и печатет чек" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="600" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-35" value="Выдается сообщение на терминале о том что недостаточно средств" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="420" y="500" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-36" value="no" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="680" y="519.75" as="targetPoint" />
+            <mxPoint x="580" y="519.75" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-37" value="Отменить заказ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="500" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-38" value="Оплата прошла" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="490" y="600" as="targetPoint" />
+            <mxPoint x="490" y="540" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-39" value="Надйет другой способ платы" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="430" y="600" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-40" value="Оплата прошла" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.06;entryY=0.467;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Out75In-WXLZ_ITTz9ds-34">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="370" y="655" as="targetPoint" />
+            <mxPoint x="430" y="615" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-41" value="Система не дает закрыть смену" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="360" y="740" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-42" value="да" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="Out75In-WXLZ_ITTz9ds-41" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="540" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-43" value="yes" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" source="Out75In-WXLZ_ITTz9ds-41" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="400" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Out75In-WXLZ_ITTz9ds-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-45" value="Проверить статус все заказов. Закрыть активные заказы" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="540" y="740" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-46" value="Закончилась чековая лента. Звонить в службку поддержки" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="840" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-48" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.886;entryY=0.444;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.003;exitY=0.347;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Out75In-WXLZ_ITTz9ds-46" target="Out75In-WXLZ_ITTz9ds-29">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="830" as="sourcePoint" />
+            <mxPoint x="330" y="830" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Out75In-WXLZ_ITTz9ds-49" target="Out75In-WXLZ_ITTz9ds-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Out75In-WXLZ_ITTz9ds-49" value="Если позиция отсутсвует на складе, то нужно выбрать другой товар" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

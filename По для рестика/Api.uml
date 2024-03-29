@@ -1,0 +1,147 @@
+@startuml
+
+interface RestaurantService {
+    CreateOrder(CreateOrderRequest) returns (CreateOrderResponse)
+    GetOrder(GetOrderRequest) returns (GetOrderResponse)
+    UpdateOrder(UpdateOrderRequest) returns (UpdateOrderResponse)
+    DeleteOrder(DeleteOrderRequest) returns (DeleteOrderResponse)
+    GetProducts(GetProductsRequest) returns (GetProductsResponse)
+    GetProduct(GetProductRequest) returns (GetProductResponse)
+    UpdateProduct(UpdateProductRequest) returns (UpdateProductResponse)
+    GetWarehouse(GetWarehouseRequest) returns (GetWarehouseResponse)
+    UpdateWarehouse(UpdateWarehouseRequest) returns (UpdateWarehouseResponse)
+    GetSuppliers(GetSuppliersRequest) returns (GetSuppliersResponse)
+    GetSupplier(GetSupplierRequest) returns (GetSupplierResponse)
+    CreateSupplier(CreateSupplierRequest) returns (CreateSupplierResponse)
+    UpdateSupplier(UpdateSupplierRequest) returns (UpdateSupplierResponse)
+    DeleteSupplier(DeleteSupplierRequest) returns (DeleteSupplierResponse)
+    CreateDelivery(CreateDeliveryRequest) returns (CreateDeliveryResponse)
+}
+
+class CreateOrderRequest {
+    string customer_name
+    repeated Product products
+}
+
+class CreateOrderResponse {
+    string order_id
+}
+
+class GetOrderRequest {
+    string order_id
+}
+
+class GetOrderResponse {
+    string order_id
+    string customer_name
+    repeated Product products
+}
+
+class UpdateOrderRequest {
+    string order_id
+    repeated Product products
+}
+
+class UpdateOrderResponse {}
+
+class DeleteOrderRequest {
+    string order_id
+}
+
+class DeleteOrderResponse {}
+
+class GetProductsRequest {}
+
+class GetProductsResponse {
+    repeated Product products
+}
+
+class GetProductRequest {
+    int64 id
+}
+
+class GetProductResponse {
+    Product product
+}
+
+class UpdateProductRequest {
+    Product product
+}
+
+class UpdateProductResponse {}
+
+class GetWarehouseRequest {}
+
+class GetWarehouseResponse {
+    repeated WarehouseProduct products
+}
+
+class UpdateWarehouseRequest {
+    repeated WarehouseProduct products
+}
+
+class UpdateWarehouseResponse {}
+
+class GetSuppliersRequest {}
+
+class GetSuppliersResponse {
+    repeated Supplier suppliers
+}
+
+class GetSupplierRequest {
+    int64 id
+}
+
+class GetSupplierResponse {
+    Supplier supplier
+}
+
+class CreateSupplierRequest {
+    Supplier supplier
+}
+
+class CreateSupplierResponse {
+    Supplier supplier
+}
+
+class UpdateSupplierRequest {
+    Supplier supplier
+}
+
+class UpdateSupplierResponse {}
+
+class DeleteSupplierRequest {
+    int64 id
+}
+
+class DeleteSupplierResponse {}
+
+class CreateDeliveryRequest {
+    Supplier supplier
+    repeated Product products
+}
+
+class CreateDeliveryResponse {
+    string delivery_id
+}
+
+class Product {
+    int64 id
+    string name
+    string description
+    float price
+    int32 quantity
+}
+
+class WarehouseProduct {
+    int64 id
+    int32 quantity
+}
+
+class Supplier {
+    int64 id
+    string name
+    string description
+}
+
+@enduml
